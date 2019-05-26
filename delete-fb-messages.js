@@ -27,7 +27,10 @@
             setTimeout(stepThree, 200);
         },
         stepThree = function(){
-            $('em[data-intl-translation="Delete"]').parentNode.click();
+            //This line not working on Popup, So i have changed it and working properly now.
+            //$('em[data-intl-translation="Delete"]').parentNode.click();
+            
+            $('div._59s7[aria-label="Dialog content"] ._3quh._30yy._2t_._3ay_._5ixy').click();
             if (null !== $('div[aria-label="Conversation actions"]')) {
                 setTimeout(stepOne, 600);
             } else {
